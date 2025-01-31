@@ -1,7 +1,7 @@
 // Your code here
 var questionsArr = [
     {
-        question: 'Honolulu is located on the islandof Oahu.', 
+        question: 'Honolulu is located on the island of Oahu.', 
         answer: true
     },
     {
@@ -23,7 +23,7 @@ var questionsArr = [
 ];
 
 // Function to run the quiz
-function runQuiz {
+function runQuiz() {
     let correctAnswers = 0; //To keep track of correct answers
 
     //Loop through the questions array
@@ -39,4 +39,7 @@ function runQuiz {
 
     //Calculate percentage of correct answers
     let percentage = Math.round((correctAnswers / questionsArr.length) * 100);
+
+    //Display results using alert
+    alert('You answered ' + percentage + '% of the questions correctly!');
 }
